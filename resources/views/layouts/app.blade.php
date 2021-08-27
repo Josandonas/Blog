@@ -34,7 +34,6 @@
     <script type="text/javascript" src="{{ asset('js/clean-blog.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/clean-blog.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jqBootstrapValidation.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.bundle.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
@@ -54,16 +53,12 @@
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/clean-blog.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/clean-blog.css') }}" rel="stylesheet">
-    <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
 </head>
 
 <body>
-                @yield('content')
-    
-    
- @guest
-
- @else
+    @yield('content')
+    @guest
+    @else
 </body>
 
   <!-- Modal -->
