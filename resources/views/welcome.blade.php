@@ -2,8 +2,8 @@
 @section('content')
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-light bg-dark">
     <a class="navbar-brand">BNHA</a>
   </nav>
     <ul class="nav navbar-nav ml-auto">
@@ -29,7 +29,7 @@
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
             <h1>BNHA</h1>
-            <span class="subheading">Comunidade e Loja</span>
+            <span class="subheading">Blog e Loja</span>
           </div>
         </div>
       </div>
@@ -73,16 +73,6 @@
     </div>
   </div>
 @endforeach
-  <!-- Footer -->
-  <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-              <p class="copyright text-muted">Copyright &copy; BNH 2019</p>
-            </div>
-          </div>
-        </div>
-      </footer>
-  @endsection
+@endsection
 
 

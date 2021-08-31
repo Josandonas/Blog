@@ -57,19 +57,20 @@
 </head>
 
 <body>
-    @yield('content')
     @guest
-    @else
-</body>
-
-  <!-- Modal -->
+    
+    {{-- The user is not authenticated... --}}
+    @endguest
+  
+    @auth
+    <!-- Modal -->
     <form action="{{ route( "publicar") }}" method="POST"  enctype="multipart/form-data">
         @csrf
         <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="TituloModalLongoExemplo">Nova Postagem <i class="fas fa-align-justify"></i></h5>
+                        <h5 class="modal-title" id="TituloModalLongoExemplo">Novo Post</h5>
 
                         <button type="button" class="btn btn-danger" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
                     </div>
@@ -98,6 +99,16 @@
             </div>
         </div>
     </form>
-    @endguest
-
+    @endauth
+    @yield('content')
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                <p class="copyright text-muted">Copyright &copy; BNHA 2019-<script>document.write(new Date().getFullYear())</script></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

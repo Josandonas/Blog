@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('content')
  <!-- Navigation -->
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <nav class="navbar navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" > <i class="fas fa-user-circle"></i>{{ Auth::user()->name }}</a>
   </nav>
   <ul class="nav navbar-nav ml-auto">
