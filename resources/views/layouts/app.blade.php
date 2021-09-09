@@ -56,13 +56,36 @@
     <link href="{{ asset('css/clean-blog.css') }}" rel="stylesheet">
 </head>
 
-<body>
+    <body>
     @guest
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href='\'><i class="far fa-angry"></i> BNHA</a>
+        </nav>
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item ">
+            <a class="nav-link " href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i>Login</a>
+            </li>
+            <li class="nav-item ">
+            <a class="nav-link " href="{{ route('register') }}"><i class="fas fa-clipboard-list"></i>Registre-se</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " href="loja2"> <i class="fas fa-store"></i>Loja </a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " href='about2'><i class="far fa-lightbulb"></i>Sobre</a>
+            </li>
+        </ul>
+    </nav>
+    @yield('content')
+    <footer class="mt-auto">
+        <p class="copyright text-white">Copyright &copy; BNHA 2019-<script>document.write(new Date().getFullYear())</script></p>
+    </footer>
     {{-- The user is not authenticated... --}}
     @endguest
   
     @auth
+    @yield('content')
     <!-- Modal -->
     <form action="{{ route( "publicar") }}" method="POST"  enctype="multipart/form-data">
         @csrf
@@ -100,15 +123,5 @@
         </div>
     </form>
     @endauth
-    @yield('content')
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto">
-                <p class="copyright text-muted">Copyright &copy; BNHA 2019-<script>document.write(new Date().getFullYear())</script></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
+    </body>
 </html>

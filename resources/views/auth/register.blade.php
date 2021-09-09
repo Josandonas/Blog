@@ -1,22 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand"  href='/' ><i class="fas fa-arrow-left"></i>Voltar</a>
-    </nav> 
-    <ul class="nav navbar-nav ml-auto">
-        <li class="nav-item">
-            <a class="nav-link " href="{{ route('login') }}"><i class="fas fa-sign-in-alt"></i>Login</a>
-        </li>
-        <li class="nav-item active">
-            <a class="nav-link" ><i class="fas fa-clipboard-list"></i>Registre-se</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link " href='about2'><i class="far fa-lightbulb"></i> Sobre </a>
-        </li>
-    </ul>
-</nav>
 <header class="masthead" style="background-image:url({{ asset('img/new.png') }})">
     <div class="container">
         <div class="row justify-content-center">
