@@ -3,6 +3,8 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/master/LICENSE)
  */
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+
 * {
     margin:0;
     padding:0;
@@ -175,10 +177,34 @@ img::-moz-selection {
     text-transform: uppercase;
 }
 
-
-header.masthead-4 {
+.masthead-4 {
     background-image: url("../img/aboutimg.png");
-    background: no-repeat center center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.site-heading-4 {
+    padding: 200px 0 150px;
+    background: rgba(172, 173, 172, 0.5);
+    display: block;
+    margin: 10px 0 0;
+}
+.site-heading-4 .titulo-4{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Noto Serif', serif;
+}
+.site-heading-4 .texto-4{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    text-align: justify;
+    font-weight: 300;
+    font-family: 'Noto Serif', serif;
 }
 
 .post-preview>a {
