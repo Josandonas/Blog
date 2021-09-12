@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<header class="masthead" style="background-image: url( {{ asset('img/login.jpg') }})">
+<div class="masthead-2">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-9">
@@ -65,5 +65,5 @@
             </div>
         </div>
     </div>
-</header>
+</div>
 @endsection

@@ -1,5 +1,15 @@
 <?php
+use App\Http\Controllers\BotManController;
 
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
+$botman = resolve('botman');
+
+$botman->hears('Hi', function ($bot) {
+    $bot->reply('Hello!');
+});
+$botman->hears('', BotManController::class.'@startConversation');
 /*
 |--------------------------------------------------------------------------
 | Web Routes

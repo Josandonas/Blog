@@ -13,7 +13,6 @@ class ExampleConversation extends Conversation{
  
     public function askReason(){
         $question = Question::create("Como posso te ajudar?")
-            ->fallback('Unable to ask question')
             ->callbackId('ask_reason')
             ->addButtons([
                 Button::create('Como funciona o cadastro?')->value('dcadastro'),

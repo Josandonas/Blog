@@ -176,7 +176,15 @@ img::-moz-selection {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-
+.masthead-2{
+    background-image: url("../img/login.jpg");
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .masthead-4 {
     background-image: url("../img/aboutimg.png");
     background-attachment: fixed;
